@@ -1,0 +1,208 @@
+2021-07-31 23:57:17,906 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2021-07-31 23:57:17,936 INFO o.a.j.JMeter: Loading user properties from: /usr/local/Cellar/jmeter/5.4.1/libexec/bin/user.properties
+2021-07-31 23:57:17,937 INFO o.a.j.JMeter: Loading system properties from: /usr/local/Cellar/jmeter/5.4.1/libexec/bin/system.properties
+2021-07-31 23:57:17,945 INFO o.a.j.JMeter: Copyright (c) 1998-2021 The Apache Software Foundation
+2021-07-31 23:57:17,945 INFO o.a.j.JMeter: Version 5.4.1
+2021-07-31 23:57:17,945 INFO o.a.j.JMeter: java.version=16.0.1
+2021-07-31 23:57:17,945 INFO o.a.j.JMeter: java.vm.name=OpenJDK 64-Bit Server VM
+2021-07-31 23:57:17,945 INFO o.a.j.JMeter: os.name=Mac OS X
+2021-07-31 23:57:17,945 INFO o.a.j.JMeter: os.arch=x86_64
+2021-07-31 23:57:17,945 INFO o.a.j.JMeter: os.version=11.4
+2021-07-31 23:57:17,945 INFO o.a.j.JMeter: file.encoding=UTF-8
+2021-07-31 23:57:17,945 INFO o.a.j.JMeter: java.awt.headless=true
+2021-07-31 23:57:17,945 INFO o.a.j.JMeter: Max memory     =1073741824
+2021-07-31 23:57:17,945 INFO o.a.j.JMeter: Available Processors =12
+2021-07-31 23:57:17,957 INFO o.a.j.JMeter: Default Locale=English (EN)
+2021-07-31 23:57:17,958 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
+2021-07-31 23:57:17,958 INFO o.a.j.JMeter: JMeterHome=/usr/local/Cellar/jmeter/5.4.1/libexec
+2021-07-31 23:57:17,958 INFO o.a.j.JMeter: user.dir  =/Users/waynbrow/Documents/Github/spring-petclinic-microservices/spring-petclinic-api-gateway/src/test/jmeter
+2021-07-31 23:57:17,958 INFO o.a.j.JMeter: PWD       =/Users/waynbrow/Documents/Github/spring-petclinic-microservices/spring-petclinic-api-gateway/src/test/jmeter
+2021-07-31 23:57:18,014 INFO o.a.j.JMeter: IP: 192.168.116.170 Name: WAYNBROW-M-F7ED FullName: waynbrow-m-f7ed.lan
+2021-07-31 23:57:18,018 INFO o.a.j.s.FileServer: Default base='/Users/waynbrow/Documents/Github/spring-petclinic-microservices/spring-petclinic-api-gateway/src/test/jmeter'
+2021-07-31 23:57:18,019 INFO o.a.j.s.FileServer: Set new base='/Users/waynbrow/Documents/Github/spring-petclinic-microservices/spring-petclinic-api-gateway/src/test/jmeter'
+2021-07-31 23:57:18,185 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2021-07-31 23:57:18,213 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2021-07-31 23:57:18,216 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2021-07-31 23:57:18,219 INFO o.a.j.s.SaveService: Loading file: petclinic_test_plan.jmx
+2021-07-31 23:57:18,272 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2021-07-31 23:57:18,273 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2021-07-31 23:57:18,273 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2021-07-31 23:57:18,273 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2021-07-31 23:57:18,273 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2021-07-31 23:57:18,273 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2021-07-31 23:57:18,315 INFO o.a.j.JMeter: Creating summariser <summary>
+2021-07-31 23:57:18,321 INFO o.a.j.r.d.ReportGenerator: ReportGenerator will use for Parsing the separator: ','
+2021-07-31 23:57:18,322 INFO o.a.j.r.d.ReportGenerator: Will generate report at end of test from  results file: results.log
+2021-07-31 23:57:18,322 INFO o.a.j.r.d.ReportGenerator: Reading report generator properties from: /usr/local/Cellar/jmeter/5.4.1/libexec/bin/reportgenerator.properties
+2021-07-31 23:57:18,323 INFO o.a.j.r.d.ReportGenerator: Merging with JMeter properties
+2021-07-31 23:57:18,328 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.temp_dir' not found, using default value 'temp' instead.
+2021-07-31 23:57:18,331 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.apdex_per_transaction' not found, using default value 'null' instead.
+2021-07-31 23:57:18,331 INFO o.a.j.r.c.ReportGeneratorConfiguration: apdex_per_transaction is empty, not APDEX per transaction customization
+2021-07-31 23:57:18,331 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.sample_filter' not found, using default value 'null' instead.
+2021-07-31 23:57:18,331 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.report_title' not found, using default value 'null' instead.
+2021-07-31 23:57:18,331 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.start_date' not found, using default value 'null' instead.
+2021-07-31 23:57:18,331 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.end_date' not found, using default value 'null' instead.
+2021-07-31 23:57:18,331 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.date_format' not found, using default value 'null' instead.
+2021-07-31 23:57:18,332 INFO o.a.j.r.c.ReportGeneratorConfiguration: Will use date range start date: null, end date: null
+2021-07-31 23:57:18,336 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.totalTPS.exclude_controllers' not found, using default value 'false' instead.
+2021-07-31 23:57:18,336 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.activeThreadsOverTime.exclude_controllers' not found, using default value 'false' instead.
+2021-07-31 23:57:18,337 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.timeVsThreads.exclude_controllers' not found, using default value 'false' instead.
+2021-07-31 23:57:18,337 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimeDistribution.exclude_controllers' not found, using default value 'false' instead.
+2021-07-31 23:57:18,337 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.transactionsPerSecond.exclude_controllers' not found, using default value 'false' instead.
+2021-07-31 23:57:18,337 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimePercentiles.exclude_controllers' not found, using default value 'false' instead.
+2021-07-31 23:57:18,337 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimePercentilesOverTime.exclude_controllers' not found, using default value 'false' instead.
+2021-07-31 23:57:18,337 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimesOverTime.exclude_controllers' not found, using default value 'false' instead.
+2021-07-31 23:57:18,337 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.connectTimeOverTime.exclude_controllers' not found, using default value 'false' instead.
+2021-07-31 23:57:18,338 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.latenciesOverTime.exclude_controllers' not found, using default value 'false' instead.
+2021-07-31 23:57:18,338 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.filters_only_sample_series' not found, using default value 'true' instead.
+2021-07-31 23:57:18,338 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.series_filter' not found, using default value '' instead.
+2021-07-31 23:57:18,338 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.show_controllers_only' not found, using default value 'false' instead.
+2021-07-31 23:57:18,339 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.filters_only_sample_series' not found, using default value 'true' instead.
+2021-07-31 23:57:18,339 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.series_filter' not found, using default value '' instead.
+2021-07-31 23:57:18,339 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.show_controllers_only' not found, using default value 'false' instead.
+2021-07-31 23:57:18,343 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2021-07-31 23:57:18,343 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2021-07-31 23:57:18,344 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2021-07-31 23:57:18,348 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2021-07-31 23:57:18,348 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2021-07-31 23:57:18,407 INFO o.a.j.JMeter: Running test (1627797438407)
+2021-07-31 23:57:18,430 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : jp@gc - Ultimate Thread Group
+2021-07-31 23:57:18,430 INFO o.a.j.e.StandardJMeterEngine: Starting 3 threads for group jp@gc - Ultimate Thread Group.
+2021-07-31 23:57:18,430 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2021-07-31 23:57:18,431 INFO k.a.j.t.AbstractSimpleThreadGroup: Starting thread group number 1 threads 3
+2021-07-31 23:57:18,438 INFO k.a.j.t.AbstractSimpleThreadGroup: Started thread group number 1
+2021-07-31 23:57:18,438 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2021-07-31 23:57:18,493 INFO o.a.j.t.JMeterThread: Thread started: jp@gc - Ultimate Thread Group 1-1
+2021-07-31 23:57:18,848 INFO o.a.j.p.h.s.HTTPHCAbstractImpl: Local host = WAYNBROW-M-F7ED
+2021-07-31 23:57:18,857 INFO o.a.j.p.h.s.HTTPHC4Impl: HTTP request retry count = 0
+2021-07-31 23:57:18,858 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2021-07-31 23:57:18,858 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to ISO-8859-1
+2021-07-31 23:57:18,858 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2021-07-31 23:57:18,858 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2021-07-31 23:57:19,132 INFO o.a.j.p.h.s.h.LazyLayeredConnectionSocketFactory: Setting up HTTPS TrustAll Socket Factory
+2021-07-31 23:57:19,140 INFO o.a.j.u.JsseSSLManager: Using default SSL protocol: TLS
+2021-07-31 23:57:19,140 INFO o.a.j.u.JsseSSLManager: SSL session context: per-thread
+2021-07-31 23:57:19,497 INFO o.a.j.u.SSLManager: JmeterKeyStore Location:  type JKS
+2021-07-31 23:57:19,502 INFO o.a.j.u.SSLManager: KeyStore created OK
+2021-07-31 23:57:19,502 WARN o.a.j.u.SSLManager: Keystore file not found, loading empty keystore
+2021-07-31 23:57:31,254 INFO o.a.j.r.Summariser: summary +     11 in 00:00:13 =    0.9/s Avg:   832 Min:   266 Max:  3644 Err:     0 (0.00%) Active: 1 Started: 1 Finished: 0
+2021-07-31 23:57:53,436 INFO o.a.j.t.JMeterThread: Thread started: jp@gc - Ultimate Thread Group 1-3
+2021-07-31 23:57:58,433 INFO o.a.j.t.JMeterThread: Thread started: jp@gc - Ultimate Thread Group 1-2
+2021-07-31 23:58:00,241 INFO o.a.j.r.Summariser: summary +     43 in 00:00:29 =    1.5/s Avg:   537 Min:   264 Max:  3182 Err:     0 (0.00%) Active: 3 Started: 3 Finished: 0
+2021-07-31 23:58:00,242 INFO o.a.j.r.Summariser: summary =     54 in 00:00:42 =    1.3/s Avg:   597 Min:   264 Max:  3644 Err:     0 (0.00%)
+2021-07-31 23:58:30,245 INFO o.a.j.r.Summariser: summary +    103 in 00:00:30 =    3.4/s Avg:   568 Min:   262 Max:  3141 Err:     0 (0.00%) Active: 3 Started: 3 Finished: 0
+2021-07-31 23:58:30,246 INFO o.a.j.r.Summariser: summary =    157 in 00:01:12 =    2.2/s Avg:   578 Min:   262 Max:  3644 Err:     0 (0.00%)
+2021-07-31 23:59:00,027 INFO o.a.j.r.Summariser: summary +    110 in 00:00:30 =    3.7/s Avg:   530 Min:   262 Max:  3181 Err:     0 (0.00%) Active: 3 Started: 3 Finished: 0
+2021-07-31 23:59:00,028 INFO o.a.j.r.Summariser: summary =    267 in 00:01:42 =    2.6/s Avg:   558 Min:   262 Max:  3644 Err:     0 (0.00%)
+2021-07-31 23:59:30,083 INFO o.a.j.r.Summariser: summary +    101 in 00:00:30 =    3.4/s Avg:   605 Min:   260 Max:  3212 Err:     0 (0.00%) Active: 3 Started: 3 Finished: 0
+2021-07-31 23:59:30,084 INFO o.a.j.r.Summariser: summary =    368 in 00:02:12 =    2.8/s Avg:   571 Min:   260 Max:  3644 Err:     0 (0.00%)
+2021-08-01 00:00:00,201 INFO o.a.j.r.Summariser: summary +    108 in 00:00:30 =    3.6/s Avg:   508 Min:   262 Max:  3191 Err:     0 (0.00%) Active: 3 Started: 3 Finished: 0
+2021-08-01 00:00:00,202 INFO o.a.j.r.Summariser: summary =    476 in 00:02:42 =    2.9/s Avg:   557 Min:   260 Max:  3644 Err:     0 (0.00%)
+2021-08-01 00:00:30,020 INFO o.a.j.r.Summariser: summary +    103 in 00:00:30 =    3.5/s Avg:   604 Min:   261 Max:  3228 Err:     0 (0.00%) Active: 3 Started: 3 Finished: 0
+2021-08-01 00:00:30,021 INFO o.a.j.r.Summariser: summary =    579 in 00:03:12 =    3.0/s Avg:   565 Min:   260 Max:  3644 Err:     0 (0.00%)
+2021-08-01 00:01:00,364 INFO o.a.j.r.Summariser: summary +    111 in 00:00:30 =    3.7/s Avg:   502 Min:   261 Max:  3304 Err:     0 (0.00%) Active: 3 Started: 3 Finished: 0
+2021-08-01 00:01:00,364 INFO o.a.j.r.Summariser: summary =    690 in 00:03:42 =    3.1/s Avg:   555 Min:   260 Max:  3644 Err:     0 (0.00%)
+2021-08-01 00:01:30,175 INFO o.a.j.r.Summariser: summary +    100 in 00:00:30 =    3.4/s Avg:   616 Min:   262 Max:  3262 Err:     0 (0.00%) Active: 3 Started: 3 Finished: 0
+2021-08-01 00:01:30,176 INFO o.a.j.r.Summariser: summary =    790 in 00:04:12 =    3.1/s Avg:   563 Min:   260 Max:  3644 Err:     0 (0.00%)
+2021-08-01 00:02:00,301 INFO o.a.j.r.Summariser: summary +    108 in 00:00:30 =    3.6/s Avg:   515 Min:   261 Max:  3262 Err:     0 (0.00%) Active: 3 Started: 3 Finished: 0
+2021-08-01 00:02:00,302 INFO o.a.j.r.Summariser: summary =    898 in 00:04:42 =    3.2/s Avg:   557 Min:   260 Max:  3644 Err:     0 (0.00%)
+2021-08-01 00:02:30,503 INFO o.a.j.r.Summariser: summary +    103 in 00:00:30 =    3.4/s Avg:   581 Min:   261 Max:  3299 Err:     0 (0.00%) Active: 3 Started: 3 Finished: 0
+2021-08-01 00:02:30,504 INFO o.a.j.r.Summariser: summary =   1001 in 00:05:12 =    3.2/s Avg:   560 Min:   260 Max:  3644 Err:     0 (0.00%)
+2021-08-01 00:03:00,134 INFO o.a.j.r.Summariser: summary +    106 in 00:00:30 =    3.6/s Avg:   551 Min:   262 Max:  3322 Err:     0 (0.00%) Active: 3 Started: 3 Finished: 0
+2021-08-01 00:03:00,134 INFO o.a.j.r.Summariser: summary =   1107 in 00:05:42 =    3.2/s Avg:   559 Min:   260 Max:  3644 Err:     0 (0.00%)
+2021-08-01 00:03:30,029 INFO o.a.j.r.Summariser: summary +     98 in 00:00:30 =    3.3/s Avg:   607 Min:   261 Max:  3340 Err:     0 (0.00%) Active: 3 Started: 3 Finished: 0
+2021-08-01 00:03:30,029 INFO o.a.j.r.Summariser: summary =   1205 in 00:06:12 =    3.2/s Avg:   563 Min:   260 Max:  3644 Err:     0 (0.00%)
+2021-08-01 00:04:00,053 INFO o.a.j.r.Summariser: summary +    106 in 00:00:30 =    3.5/s Avg:   555 Min:   262 Max:  3342 Err:     0 (0.00%) Active: 3 Started: 3 Finished: 0
+2021-08-01 00:04:00,054 INFO o.a.j.r.Summariser: summary =   1311 in 00:06:42 =    3.3/s Avg:   562 Min:   260 Max:  3644 Err:     0 (0.00%)
+2021-08-01 00:04:30,282 INFO o.a.j.r.Summariser: summary +     99 in 00:00:30 =    3.3/s Avg:   548 Min:   260 Max:  3543 Err:     0 (0.00%) Active: 3 Started: 3 Finished: 0
+2021-08-01 00:04:30,283 INFO o.a.j.r.Summariser: summary =   1410 in 00:07:12 =    3.3/s Avg:   561 Min:   260 Max:  3644 Err:     0 (0.00%)
+2021-08-01 00:05:00,452 INFO o.a.j.r.Summariser: summary +     99 in 00:00:30 =    3.3/s Avg:   614 Min:   260 Max:  3463 Err:     0 (0.00%) Active: 3 Started: 3 Finished: 0
+2021-08-01 00:05:00,453 INFO o.a.j.r.Summariser: summary =   1509 in 00:07:42 =    3.3/s Avg:   565 Min:   260 Max:  3644 Err:     0 (0.00%)
+2021-08-01 00:05:30,299 INFO o.a.j.r.Summariser: summary +    106 in 00:00:30 =    3.6/s Avg:   561 Min:   261 Max:  3432 Err:     0 (0.00%) Active: 3 Started: 3 Finished: 0
+2021-08-01 00:05:30,301 INFO o.a.j.r.Summariser: summary =   1615 in 00:08:12 =    3.3/s Avg:   564 Min:   260 Max:  3644 Err:     0 (0.00%)
+2021-08-01 00:06:00,572 INFO o.a.j.r.Summariser: summary +     98 in 00:00:30 =    3.2/s Avg:   618 Min:   261 Max:  3431 Err:     0 (0.00%) Active: 3 Started: 3 Finished: 0
+2021-08-01 00:06:00,574 INFO o.a.j.r.Summariser: summary =   1713 in 00:08:42 =    3.3/s Avg:   567 Min:   260 Max:  3644 Err:     0 (0.00%)
+2021-08-01 00:06:30,048 INFO o.a.j.r.Summariser: summary +    101 in 00:00:29 =    3.4/s Avg:   583 Min:   260 Max:  3471 Err:     0 (0.00%) Active: 3 Started: 3 Finished: 0
+2021-08-01 00:06:30,048 INFO o.a.j.r.Summariser: summary =   1814 in 00:09:12 =    3.3/s Avg:   568 Min:   260 Max:  3644 Err:     0 (0.00%)
+2021-08-01 00:07:00,105 INFO o.a.j.r.Summariser: summary +    102 in 00:00:30 =    3.4/s Avg:   553 Min:   260 Max:  3532 Err:     0 (0.00%) Active: 3 Started: 3 Finished: 0
+2021-08-01 00:07:00,106 INFO o.a.j.r.Summariser: summary =   1916 in 00:09:42 =    3.3/s Avg:   567 Min:   260 Max:  3644 Err:     0 (0.00%)
+2021-08-01 00:07:30,253 INFO o.a.j.r.Summariser: summary +    102 in 00:00:30 =    3.4/s Avg:   616 Min:   261 Max:  3573 Err:     0 (0.00%) Active: 3 Started: 3 Finished: 0
+2021-08-01 00:07:30,253 INFO o.a.j.r.Summariser: summary =   2018 in 00:10:12 =    3.3/s Avg:   570 Min:   260 Max:  3644 Err:     0 (0.00%)
+2021-08-01 00:08:00,064 INFO o.a.j.r.Summariser: summary +    104 in 00:00:30 =    3.5/s Avg:   577 Min:   260 Max:  3541 Err:     0 (0.00%) Active: 3 Started: 3 Finished: 0
+2021-08-01 00:08:00,065 INFO o.a.j.r.Summariser: summary =   2122 in 00:10:42 =    3.3/s Avg:   570 Min:   260 Max:  3644 Err:     0 (0.00%)
+2021-08-01 00:08:13,356 INFO o.a.j.t.JMeterThread: Thread finished: jp@gc - Ultimate Thread Group 1-3
+2021-08-01 00:08:29,794 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: jp@gc - Ultimate Thread Group 1-2
+2021-08-01 00:08:29,794 INFO o.a.j.t.JMeterThread: Thread finished: jp@gc - Ultimate Thread Group 1-2
+2021-08-01 00:08:30,041 INFO o.a.j.r.Summariser: summary +     78 in 00:00:30 =    2.6/s Avg:   636 Min:   263 Max:  3573 Err:     0 (0.00%) Active: 1 Started: 3 Finished: 2
+2021-08-01 00:08:30,042 INFO o.a.j.r.Summariser: summary =   2200 in 00:11:12 =    3.3/s Avg:   573 Min:   260 Max:  3644 Err:     0 (0.00%)
+2021-08-01 00:09:02,177 INFO o.a.j.r.Summariser: summary +     33 in 00:00:32 =    1.0/s Avg:   664 Min:   265 Max:  3602 Err:     0 (0.00%) Active: 1 Started: 3 Finished: 2
+2021-08-01 00:09:02,177 INFO o.a.j.r.Summariser: summary =   2233 in 00:11:44 =    3.2/s Avg:   574 Min:   260 Max:  3644 Err:     0 (0.00%)
+2021-08-01 00:09:30,041 INFO o.a.j.r.Summariser: summary +     31 in 00:00:28 =    1.1/s Avg:   584 Min:   264 Max:  3516 Err:     0 (0.00%) Active: 1 Started: 3 Finished: 2
+2021-08-01 00:09:30,042 INFO o.a.j.r.Summariser: summary =   2264 in 00:12:12 =    3.1/s Avg:   574 Min:   260 Max:  3644 Err:     0 (0.00%)
+2021-08-01 00:10:00,353 INFO o.a.j.r.Summariser: summary +     34 in 00:00:30 =    1.1/s Avg:   561 Min:   264 Max:  3560 Err:     0 (0.00%) Active: 1 Started: 3 Finished: 2
+2021-08-01 00:10:00,353 INFO o.a.j.r.Summariser: summary =   2298 in 00:12:42 =    3.0/s Avg:   574 Min:   260 Max:  3644 Err:     0 (0.00%)
+2021-08-01 00:10:32,718 INFO o.a.j.r.Summariser: summary +     35 in 00:00:32 =    1.1/s Avg:   647 Min:   263 Max:  3649 Err:     0 (0.00%) Active: 1 Started: 3 Finished: 2
+2021-08-01 00:10:32,719 INFO o.a.j.r.Summariser: summary =   2333 in 00:13:14 =    2.9/s Avg:   575 Min:   260 Max:  3649 Err:     0 (0.00%)
+2021-08-01 00:11:00,014 INFO o.a.j.r.Summariser: summary +     30 in 00:00:27 =    1.1/s Avg:   597 Min:   263 Max:  3688 Err:     0 (0.00%) Active: 1 Started: 3 Finished: 2
+2021-08-01 00:11:00,014 INFO o.a.j.r.Summariser: summary =   2363 in 00:13:42 =    2.9/s Avg:   575 Min:   260 Max:  3688 Err:     0 (0.00%)
+2021-08-01 00:11:30,546 INFO o.a.j.r.Summariser: summary +     35 in 00:00:31 =    1.1/s Avg:   543 Min:   263 Max:  3505 Err:     0 (0.00%) Active: 1 Started: 3 Finished: 2
+2021-08-01 00:11:30,547 INFO o.a.j.r.Summariser: summary =   2398 in 00:14:12 =    2.8/s Avg:   575 Min:   260 Max:  3688 Err:     0 (0.00%)
+2021-08-01 00:12:00,052 INFO o.a.j.r.Summariser: summary +     34 in 00:00:30 =    1.2/s Avg:   548 Min:   263 Max:  3444 Err:     0 (0.00%) Active: 1 Started: 3 Finished: 2
+2021-08-01 00:12:00,053 INFO o.a.j.r.Summariser: summary =   2432 in 00:14:42 =    2.8/s Avg:   574 Min:   260 Max:  3688 Err:     0 (0.00%)
+2021-08-01 00:12:31,005 INFO o.a.j.r.Summariser: summary +     31 in 00:00:31 =    1.0/s Avg:   685 Min:   263 Max:  3606 Err:     0 (0.00%) Active: 1 Started: 3 Finished: 2
+2021-08-01 00:12:31,005 INFO o.a.j.r.Summariser: summary =   2463 in 00:15:13 =    2.7/s Avg:   576 Min:   260 Max:  3688 Err:     0 (0.00%)
+2021-08-01 00:12:48,919 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: jp@gc - Ultimate Thread Group 1-1
+2021-08-01 00:12:48,920 INFO o.a.j.t.JMeterThread: Thread finished: jp@gc - Ultimate Thread Group 1-1
+2021-08-01 00:12:48,921 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2021-08-01 00:12:48,922 INFO o.a.j.r.Summariser: summary +     20 in 00:00:18 =    1.1/s Avg:   591 Min:   263 Max:  3479 Err:     0 (0.00%) Active: 0 Started: 3 Finished: 3
+2021-08-01 00:12:48,922 INFO o.a.j.r.Summariser: summary =   2483 in 00:15:31 =    2.7/s Avg:   576 Min:   260 Max:  3688 Err:     0 (0.00%)
+2021-08-01 00:12:48,923 INFO o.a.j.JMeter: Generating Dashboard
+2021-08-01 00:12:48,923 INFO o.a.j.r.d.ReportGenerator: Flushing result collector before report Generation
+2021-08-01 00:12:48,941 INFO o.a.j.r.p.NormalizerSampleConsumer: Using format, 'ms', to parse timeStamp field
+2021-08-01 00:12:49,114 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.AggregateConsumer#stopProducing(): beginDate produced 0 samples
+2021-08-01 00:12:49,114 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.AggregateConsumer#stopProducing(): endDate produced 0 samples
+2021-08-01 00:12:49,117 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.ApdexSummaryConsumer#stopProducing(): apdexSummary produced 0 samples
+2021-08-01 00:12:49,117 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.RequestsSummaryConsumer#stopProducing(): requestsSummary produced 0 samples
+2021-08-01 00:12:49,122 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.StatisticsSummaryConsumer#stopProducing(): statisticsSummary produced 0 samples
+2021-08-01 00:12:49,129 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.Top5ErrorsBySamplerConsumer#stopProducing(): top5ErrorsBySampler produced 0 samples
+2021-08-01 00:12:49,129 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.ErrorsSummaryConsumer#stopProducing(): errorsSummary produced 0 samples
+2021-08-01 00:12:49,129 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.HitsPerSecondGraphConsumer#stopProducing(): hitsPerSecond produced 0 samples
+2021-08-01 00:12:49,164 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.LatencyVSRequestGraphConsumer#stopProducing(): latencyVsRequest produced 0 samples
+2021-08-01 00:12:49,165 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.SyntheticResponseTimeDistributionGraphConsumer#stopProducing(): syntheticResponseTimeDistribution produced 0 samples
+2021-08-01 00:12:49,165 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.BytesThroughputGraphConsumer#stopProducing(): bytesThroughputOverTime produced 0 samples
+2021-08-01 00:12:49,165 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.CodesPerSecondGraphConsumer#stopProducing(): codesPerSecond produced 0 samples
+2021-08-01 00:12:49,193 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimeVSRequestGraphConsumer#stopProducing(): responseTimeVsRequest produced 0 samples
+2021-08-01 00:12:49,194 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.FilterConsumer#stopProducing(): startIntervalControlerFilter produced 17381 samples
+2021-08-01 00:12:49,194 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.TotalTPSGraphConsumer#stopProducing(): totalTPS produced 0 samples
+2021-08-01 00:12:49,194 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ActiveThreadsGraphConsumer#stopProducing(): activeThreadsOverTime produced 0 samples
+2021-08-01 00:12:49,194 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.TimeVSThreadGraphConsumer#stopProducing(): timeVsThreads produced 0 samples
+2021-08-01 00:12:49,194 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimeDistributionGraphConsumer#stopProducing(): responseTimeDistribution produced 0 samples
+2021-08-01 00:12:49,194 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.TransactionsPerSecondGraphConsumer#stopProducing(): transactionsPerSecond produced 0 samples
+2021-08-01 00:12:49,195 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimePercentilesGraphConsumer#stopProducing(): responseTimePercentiles produced 0 samples
+2021-08-01 00:12:49,196 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimePercentilesOverTimeGraphConsumer#stopProducing(): responseTimePercentilesOverTime produced 0 samples
+2021-08-01 00:12:49,197 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimeOverTimeGraphConsumer#stopProducing(): responseTimesOverTime produced 0 samples
+2021-08-01 00:12:49,197 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ConnectTimeOverTimeGraphConsumer#stopProducing(): connectTimeOverTime produced 0 samples
+2021-08-01 00:12:49,197 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.LatencyOverTimeGraphConsumer#stopProducing(): latenciesOverTime produced 0 samples
+2021-08-01 00:12:49,198 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.FilterConsumer#stopProducing(): nameFilter produced 37245 samples
+2021-08-01 00:12:49,198 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.FilterConsumer#stopProducing(): dateRangeFilter produced 7449 samples
+2021-08-01 00:12:49,198 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.NormalizerSampleConsumer#stopProducing(): normalizer produced 2483 samples
+2021-08-01 00:12:49,198 INFO o.a.j.r.p.CsvFileSampleSource: produce(): 2483 samples produced in 236ms on channel 0
+2021-08-01 00:12:49,198 INFO o.a.j.r.d.ReportGenerator: Exporting data using exporter:'json' of className:'org.apache.jmeter.report.dashboard.JsonExporter'
+2021-08-01 00:12:49,306 INFO o.a.j.r.d.JsonExporter: Found data for consumer statisticsSummary in context
+2021-08-01 00:12:49,306 INFO o.a.j.r.d.JsonExporter: Creating statistics for overall
+2021-08-01 00:12:49,306 INFO o.a.j.r.d.JsonExporter: Creating statistics for other transactions
+2021-08-01 00:12:49,307 INFO o.a.j.r.d.JsonExporter: Checking output folder
+2021-08-01 00:12:49,307 INFO o.a.j.r.d.JsonExporter: Writing statistics JSON to report-output/statistics.json
+2021-08-01 00:12:49,336 INFO o.a.j.r.d.ReportGenerator: Exporting data using exporter:'html' of className:'org.apache.jmeter.report.dashboard.HtmlTemplateExporter'
+2021-08-01 00:12:49,338 ERROR o.a.j.JMeter: Error generating the report: Cannot write to '/usr/local/Cellar/jmeter/5.4.1/libexec/bin/report-output' as folder is not empty
+java.lang.IllegalArgumentException: Cannot write to '/usr/local/Cellar/jmeter/5.4.1/libexec/bin/report-output' as folder is not empty
+	at org.apache.jorphan.util.JOrphanUtils.canSafelyWriteToFolder(JOrphanUtils.java:663) ~[jorphan.jar:5.4.1]
+	at org.apache.jorphan.util.JOrphanUtils.canSafelyWriteToFolder(JOrphanUtils.java:606) ~[jorphan.jar:5.4.1]
+	at org.apache.jmeter.report.dashboard.HtmlTemplateExporter.export(HtmlTemplateExporter.java:327) ~[ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.report.dashboard.ReportGenerator.exportData(ReportGenerator.java:379) ~[ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.report.dashboard.ReportGenerator.generate(ReportGenerator.java:257) ~[ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.JMeter$ListenToTest.endTest(JMeter.java:1346) [ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.JMeter$ListenToTest.testEnded(JMeter.java:1301) [ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.engine.StandardJMeterEngine.notifyTestListenersOfEnd(StandardJMeterEngine.java:218) [ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.engine.StandardJMeterEngine.run(StandardJMeterEngine.java:493) [ApacheJMeter_core.jar:5.4.1]
+	at java.lang.Thread.run(Thread.java:831) [?:?]

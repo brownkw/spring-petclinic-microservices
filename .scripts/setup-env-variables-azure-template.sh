@@ -30,3 +30,12 @@ export MYSQL_DATABASE_NAME=petclinic
 
 # ==== KEY VAULT Info ====
 export KEY_VAULT=your-keyvault-name # customize this
+
+# === APPDYNAMICS INFO ====
+export APPDYNAMICS_CONTROLLER_HOST_NAME= # customize this
+export APPDYNAMICS_CONTROLLER_PORT= # customize this
+export APPDYNAMICS_CONTROLLER_SSL_ENABLED= # customize this
+export APPDYNAMICS_AGENT_APPLICATION_NAME= # customize this
+export APPDYNAMICS_AGENT_ACCOUNT_NAME= # customize this
+export APPDYNAMICS_AGENT_ACCOUNT_ACCESS_KEY= # customize this
+export APPDYNAMICS_JAVA_AGENT_REUSE_NODE_NAME=true # leave this if you want dynamic node names
