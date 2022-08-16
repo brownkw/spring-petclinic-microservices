@@ -14,11 +14,11 @@ export VETS_SERVICE=vets-service
 export VISITS_SERVICE=visits-service
 
 # ==== JARS ====
-export API_GATEWAY_JAR=spring-petclinic-api-gateway/target/spring-petclinic-api-gateway-2.3.6.jar
-export ADMIN_SERVER_JAR=spring-petclinic-admin-server/target/spring-petclinic-admin-server-2.3.6.jar
-export CUSTOMERS_SERVICE_JAR=spring-petclinic-customers-service/target/spring-petclinic-customers-service-2.3.6.jar
-export VETS_SERVICE_JAR=spring-petclinic-vets-service/target/spring-petclinic-vets-service-2.3.6.jar
-export VISITS_SERVICE_JAR=spring-petclinic-visits-service/target/spring-petclinic-visits-service-2.3.6.jar
+export API_GATEWAY_JAR=spring-petclinic-api-gateway/target/spring-petclinic-api-gateway-2.5.1.jar
+export ADMIN_SERVER_JAR=spring-petclinic-admin-server/target/spring-petclinic-admin-server-2.5.1.jar
+export CUSTOMERS_SERVICE_JAR=spring-petclinic-customers-service/target/spring-petclinic-customers-service-2.5.1.jar
+export VETS_SERVICE_JAR=spring-petclinic-vets-service/target/spring-petclinic-vets-service-2.5.1.jar
+export VISITS_SERVICE_JAR=spring-petclinic-visits-service/target/spring-petclinic-visits-service-2.5.1.jar
 
 # ==== MYSQL INFO ====
 export MYSQL_SERVER_NAME=mysql-servername # customize this
@@ -39,3 +39,6 @@ export APPDYNAMICS_AGENT_APPLICATION_NAME= # customize this
 export APPDYNAMICS_AGENT_ACCOUNT_NAME= # customize this
 export APPDYNAMICS_AGENT_ACCOUNT_ACCESS_KEY= # customize this
 export APPDYNAMICS_JAVA_AGENT_REUSE_NODE_NAME=true # leave this if you want dynamic node names
+
+# ==== LOG ANALYTICS Info ====
+export LOG_ANALYTICS=${SPRING_CLOUD_SERVICE}
