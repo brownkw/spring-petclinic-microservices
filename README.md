@@ -142,6 +142,14 @@ Open `.scripts/setup-env-variables-azure.sh` and enter the following information
     ...
     export MYSQL_SERVER_ADMIN_PASSWORD=SuperS3cr3t # customize this
     ...
+    # === APPDYNAMICS INFO ====
+    export APPDYNAMICS_CONTROLLER_HOST_NAME= # customize this
+    export APPDYNAMICS_CONTROLLER_PORT= # customize this
+    export APPDYNAMICS_CONTROLLER_SSL_ENABLED= # customize this
+    export APPDYNAMICS_AGENT_APPLICATION_NAME= # customize this
+    export APPDYNAMICS_AGENT_ACCOUNT_NAME= # customize this
+    export APPDYNAMICS_AGENT_ACCOUNT_ACCESS_KEY= # customize this
+    export APPDYNAMICS_JAVA_AGENT_REUSE_NODE_NAME=true # leave this if you want dynamic node names
 ```
 
 Then, set the environment:
@@ -171,7 +179,7 @@ Create a resource group to contain your Azure Spring Cloud service.
 Create an instance of Azure Spring Cloud.
 
 ```bash
-    az spring-cloud create --name ${SPRING_CLOUD_SERVICE} \
+    az spring create --name ${SPRING_CLOUD_SERVICE} \
             --sku standard \
             --sampling-rate 100 \
             --resource-group ${RESOURCE_GROUP} \
@@ -189,7 +197,7 @@ Set your default resource group name and cluster name using the following comman
         spring-cloud=${SPRING_CLOUD_SERVICE}
 ```
 
-### Create and configure Log Analytics Workspace
+### Create and configure Log Analytics Workspace (OPTIONAL)
 
 Create a Log Analytics Workspace using Azure CLI:
 
@@ -203,7 +211,7 @@ Create a Log Analytics Workspace using Azure CLI:
         --resource-group ${RESOURCE_GROUP} \
         --workspace-name ${LOG_ANALYTICS} | jq -r '.id')
 
-    export SPRING_CLOUD_RESOURCE_ID=$(az spring-cloud show \
+    export SPRING_CLOUD_RESOURCE_ID=$(az spring show \
         --name ${SPRING_CLOUD_SERVICE} \
         --resource-group ${RESOURCE_GROUP} | jq -r '.id')
 ```
@@ -257,7 +265,7 @@ Setup diagnostics and publish logs and metrics from Spring Boot apps to Azure Lo
 Use the `application.yml` in the root of this project to load configuration into the Config Server in Azure Spring Cloud.
 
 ```bash
-    az spring-cloud config-server set \
+    az spring config-server set \
         --config-file application.yml \
         --name ${SPRING_CLOUD_SERVICE}
 ```
@@ -267,23 +275,23 @@ Use the `application.yml` in the root of this project to load configuration into
 Create 5 apps.
 
 ```bash
-    az spring-cloud app create --name ${API_GATEWAY} --instance-count 1 --assign-endpoint true \
+    az spring app create --name ${API_GATEWAY} --instance-count 1 --assign-endpoint true \
         --memory 2 \
         --jvm-options='-Xms2048m -Xmx2048m'
     
-    az spring-cloud app create --name ${ADMIN_SERVER} --instance-count 1 --assign-endpoint true \
+    az spring app create --name ${ADMIN_SERVER} --instance-count 1 --assign-endpoint true \
         --memory 2 \
         --jvm-options='-Xms2048m -Xmx2048m'
     
-    az spring-cloud app create --name ${CUSTOMERS_SERVICE} --instance-count 1 \
+    az spring app create --name ${CUSTOMERS_SERVICE} --instance-count 1 \
         --memory 2 \
         --jvm-options='-Xms2048m -Xmx2048m'
     
-    az spring-cloud app create --name ${VETS_SERVICE} --instance-count 1 \
+    az spring app create --name ${VETS_SERVICE} --instance-count 1 \
         --memory 2 \
         --jvm-options='-Xms2048m -Xmx2048m'
     
-    az spring-cloud app create --name ${VISITS_SERVICE} --instance-count 1 \
+    az spring app create --name ${VISITS_SERVICE} --instance-count 1 \
         --memory 2 \
         --jvm-options='-Xms2048m -Xmx2048m'
 ```
@@ -366,17 +374,17 @@ Create a MySQL database in Azure Database for MySQL.
 Deploy Spring Boot applications to Azure.
 
 ```bash
-    az spring-cloud app deploy --name ${API_GATEWAY} \
+    az spring app deploy --name ${API_GATEWAY} \
         --jar-path ${API_GATEWAY_JAR} \
         --jvm-options='-Xms2048m -Xmx2048m -Dspring.profiles.active=mysql'
     
     
-    az spring-cloud app deploy --name ${ADMIN_SERVER} \
+    az spring app deploy --name ${ADMIN_SERVER} \
         --jar-path ${ADMIN_SERVER_JAR} \
         --jvm-options='-Xms2048m -Xmx2048m -Dspring.profiles.active=mysql'
     
     
-    az spring-cloud app deploy --name ${CUSTOMERS_SERVICE} \
+    az spring app deploy --name ${CUSTOMERS_SERVICE} \
         --jar-path ${CUSTOMERS_SERVICE_JAR} \
         --jvm-options='-Xms2048m -Xmx2048m -Dspring.profiles.active=mysql' \
         --env MYSQL_SERVER_FULL_NAME=${MYSQL_SERVER_FULL_NAME} \
@@ -385,7 +393,7 @@ Deploy Spring Boot applications to Azure.
               MYSQL_SERVER_ADMIN_PASSWORD=${MYSQL_SERVER_ADMIN_PASSWORD}
     
     
-    az spring-cloud app deploy --name ${VETS_SERVICE} \
+    az spring app deploy --name ${VETS_SERVICE} \
         --jar-path ${VETS_SERVICE_JAR} \
         --jvm-options='-Xms2048m -Xmx2048m -Dspring.profiles.active=mysql' \
         --env MYSQL_SERVER_FULL_NAME=${MYSQL_SERVER_FULL_NAME} \
@@ -394,7 +402,7 @@ Deploy Spring Boot applications to Azure.
               MYSQL_SERVER_ADMIN_PASSWORD=${MYSQL_SERVER_ADMIN_PASSWORD}
               
     
-    az spring-cloud app deploy --name ${VISITS_SERVICE} \
+    az spring app deploy --name ${VISITS_SERVICE} \
         --jar-path ${VISITS_SERVICE_JAR} \
         --jvm-options='-Xms2048m -Xmx2048m -Dspring.profiles.active=mysql' \
         --env MYSQL_SERVER_FULL_NAME=${MYSQL_SERVER_FULL_NAME} \
@@ -404,7 +412,7 @@ Deploy Spring Boot applications to Azure.
 ```
 
 ```bash
-    az spring-cloud app show --name ${API_GATEWAY} | grep url
+    az spring app show --name ${API_GATEWAY} | grep url
 ```
 
 Navigate to the URL provided by the previous command to open the Pet Clinic application.
@@ -442,13 +450,13 @@ curl -X GET https://${SPRING_CLOUD_SERVICE}-${API_GATEWAY}.azuremicroservices.io
 
 Use the following command to get the latest 100 lines of app console logs from Customers Service. 
 ```bash
-az spring-cloud app logs -n ${CUSTOMERS_SERVICE} --lines 100
+az spring app logs -n ${CUSTOMERS_SERVICE} --lines 100
 ```
 By adding a `-f` parameter you can get real-time log streaming from the app. Try log streaming for the API Gateway app.
 ```bash
-az spring-cloud app logs -n ${API_GATEWAY} -f
+az spring app logs -n ${API_GATEWAY} -f
 ```
-You can use `az spring-cloud app logs -h` to explore more parameters and log stream functionalities.
+You can use `az spring app logs -h` to explore more parameters and log stream functionalities.
 
 #### Open Actuator endpoints for API Gateway and Customers Service apps
 
@@ -676,14 +684,14 @@ Store database connection secrets in Key Vault.
 Enable System Assigned Identities for applications and export identities to environment.
 
 ```bash
-    az spring-cloud app identity assign --name ${CUSTOMERS_SERVICE}
-    export CUSTOMERS_SERVICE_IDENTITY=$(az spring-cloud app show --name ${CUSTOMERS_SERVICE} | jq -r '.identity.principalId')
+    az spring app identity assign --name ${CUSTOMERS_SERVICE}
+    export CUSTOMERS_SERVICE_IDENTITY=$(az spring app show --name ${CUSTOMERS_SERVICE} | jq -r '.identity.principalId')
     
-    az spring-cloud app identity assign --name ${VETS_SERVICE}
-    export VETS_SERVICE_IDENTITY=$(az spring-cloud app show --name ${VETS_SERVICE} | jq -r '.identity.principalId')
+    az spring app identity assign --name ${VETS_SERVICE}
+    export VETS_SERVICE_IDENTITY=$(az spring app show --name ${VETS_SERVICE} | jq -r '.identity.principalId')
     
-    az spring-cloud app identity assign --name ${VISITS_SERVICE}
-    export VISITS_SERVICE_IDENTITY=$(az spring-cloud app show --name ${VISITS_SERVICE} | jq -r '.identity.principalId')
+    az spring app identity assign --name ${VISITS_SERVICE}
+    export VISITS_SERVICE_IDENTITY=$(az spring app show --name ${VISITS_SERVICE} | jq -r '.identity.principalId')
 ```
 
 ### Grant Managed Identities with access to Azure Key Vault
@@ -707,17 +715,17 @@ Activate applications to load secrets from Azure Key Vault.
 
 ```bash
     # DO NOT FORGET to replace the value for "azure.keyvault.uri" JVM startup parameter with your Key Vault URI
-    az spring-cloud app update --name ${CUSTOMERS_SERVICE} \
+    az spring app update --name ${CUSTOMERS_SERVICE} \
         --jvm-options='-Xms2048m -Xmx2048m -Dspring.profiles.active=mysql,key-vault -Dazure.keyvault.uri=https://petclinic-keyvault.vault.azure.net/' \
         --env
     
     # DO NOT FORGET to replace the value for "azure.keyvault.uri" JVM startup parameter with your Key Vault URI    
-    az spring-cloud app update --name ${VETS_SERVICE} \
+    az spring app update --name ${VETS_SERVICE} \
         --jvm-options='-Xms2048m -Xmx2048m -Dspring.profiles.active=mysql,key-vault -Dazure.keyvault.uri=https://petclinic-keyvault.vault.azure.net/' \
         --env
     
     # DO NOT FORGET to replace the value for "azure.keyvault.uri" JVM startup parameter with your Key Vault URI       
-    az spring-cloud app update --name ${VISITS_SERVICE} \
+    az spring app update --name ${VISITS_SERVICE} \
         --jvm-options='-Xms2048m -Xmx2048m -Dspring.profiles.active=mysql,key-vault -Dazure.keyvault.uri=https://petclinic-keyvault.vault.azure.net/' \
         --env
 ```
